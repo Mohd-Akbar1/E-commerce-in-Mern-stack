@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <h1 >WebCart</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class=" navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WOMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">KIDS</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex ms-3 searchbar">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-box">
+                   
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center py-5 d-flex ">
+        <div class=" flex-fill">
+            <h1 class="display-4">Inspired by your</h1>
+            <h1 class="display-4"><span class="text-danger">fashion</span> dream</h1>
+            <p class="lead">Fashion always was a huge interest of mine.
+                beading and lovely fabrics.</p>
+                <p> You love beautiful clothes. We appreciate fine</p>
+            <a href="#" class="btn btn-warning btn-lg">Shop Now</a>
+        </div>
+        <div class="hero-image flex-fill">
+            <img src="./picture/girls-removebg-preview.png" alt="Fashion Girl" class="img-fluid mt-4" >
+        </div>
+    </section>
+
+
+     <!-- Featured Collection Section -->
+    <section class="featured-collection py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Feature Collection</h2>
+            <div class="row" id="product-list"></div>
+        </div>
+        
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature-box p-3 " style="background-color: #F8F9FA;">
+                        <h5><img src="./picture/lorry.png" class="icon" alt=""> Free Shipping</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box p-3">
+                        <h5><img src="./picture/support.png" class="icon" alt=""> Customer Support</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box p-3">
+                        <h5><img src="./picture/good-quality.png" class="icon" alt=""> Best Quality</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+        <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="text-white">Gallery</h5>
+                    <ul class="list-unstyled text-white">
+                        <li><a href="#" style="color: #f15dbd;">Community</a></li>
+                        <li><a href="#" style="color: #f15dbd;">Trending</a></li>
+                        <li><a href="#" style="color: #f15dbd;">Picks</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white">Marketplace</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: #f15dbd;">Trending</a></li>
+                        <li><a href="#" style="color: #f15dbd;">Best selling</a></li>
+                        <li><a href="#" style="color: #f15dbd;">Latest</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h5 class="text-white">Magazine</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: #f15dbd;">Art Skills</a></li>
+                        <li><a href="#" style="color: #f15dbd;">Career</a></li>
+                        <li><a href="#" style="color: #f15dbd;">Inspiration</a></li>
+                        <li><a href="#" style="color: #f15dd1;">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 newsletter">
+                    <h5 class="text-white">Newsletter</h5>
+                    <p style="color: #f15dbd;"> Subscribe to our newsletter to get your weekly dose of news, updates, tips, and special offers.</p>
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="button">Subscribe</button>
+                </div>
+            </div>
+            <div class="row bottom-links text-center mt-4">
+                <div class="col">
+                    <a href="#">Privacy Policy</a> · <a href="#">Terms and conditions</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
